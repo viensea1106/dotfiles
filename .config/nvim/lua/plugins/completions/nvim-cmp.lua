@@ -15,6 +15,10 @@ return {
 					luasnip.lsp_expand(args.body)
 				end,
 			},
+			window = {
+				completion = cmp.config.window.bordered(),
+				documentation = cmp.config.window.bordered(),
+			},
 			mapping = cmp.mapping.preset.insert({
 				["<C-k>"] = cmp.mapping.select_prev_item(), -- previous suggestion
 				["<C-j>"] = cmp.mapping.select_next_item(), -- next suggestion
@@ -42,9 +46,10 @@ return {
 	end,
 	dependencies = {
 		"onsails/lspkind.nvim",
-    "hrsh7th/cmp-nvim-lsp",
+		"hrsh7th/cmp-nvim-lsp",
+		"hrsh7th/cmp-buffer",
+		"hrsh7th/cmp-path",
 		{
-
 			"L3MON4D3/LuaSnip",
 			-- follow latest release.
 			version = "2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
