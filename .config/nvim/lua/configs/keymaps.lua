@@ -60,3 +60,7 @@ kmp.set("n", "<space>fb", ":Telescope file_browser<CR>", opts)
 -- bufferline
 kmp.set("n", "<Tab>", ":BufferLineCycleNext<CR>")
 kmp.set("n", "<S-Tab>", ":BufferLineCyclePrev<CR>")
+
+-- toggleterm
+kmp.set("n", "<leader>tt", ":ToggleTerm size=20 dir=./ direction=horizontal<CR>", opts)
+kmp.set("t", "<esc>", [[<C-\><C-n>]], { silent = true })
