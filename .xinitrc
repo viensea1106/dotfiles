@@ -23,7 +23,7 @@ sxhkd &
 # fix shadows in windows
 picom --config /home/vnc1106/.config/picom/picom.conf &
 # set background
-feh --bg-fill ~/.config/wallpapers/arch1.jpg
+feh --bg-fill /home/vnc1106/.local/share/images/desktop.jpg 
 # status bar
 polybar &
 # fix cursor `x`
