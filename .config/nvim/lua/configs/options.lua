@@ -14,15 +14,15 @@ opt.autoindent = true
 opt.wrap = false
 
 -- search settings
-opt.ignorecase = true 
-opt.smartcase = true 
+opt.ignorecase = true
+opt.smartcase = true
 
 -- cursor line
-opt.cursorline = true 
+opt.cursorline = true
 
 -- appearance
 opt.termguicolors = true
-opt.background = "dark" 
+opt.background = "dark"
 opt.signcolumn = "yes" -- show sign column so that text doesn't shift
 
 -- backspace
@@ -34,3 +34,6 @@ opt.clipboard:append("unnamedplus") -- use system clipboard as default register
 -- split windows
 opt.splitright = true
 opt.splitbelow = true
+
+-- set default shell
+opt.shell = "/usr/bin/zsh"
