@@ -1,0 +1,7 @@
+#!/bin/bash
+
+maim /tmp/saved_screen.png
+convert /tmp/saved_screen.png -blur 0x05 /tmp/saved_screen.png
+convert /tmp/saved_screen.png /home/vnc1106/.local/share/images/lock_screen_banner.png -gravity center -composite -matte /tmp/saved_screen_lock.png
+i3lock -u -i /tmp/saved_screen_lock.png
+rm /tmp/saved_screen_lock.png
