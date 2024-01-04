@@ -15,7 +15,7 @@ super + Escape
 	pkill -USR1 -x sxhkd
 
 # lockscreen
-super + l
+ctrl + l
   ~/.scripts/i3lock/lock_screen
 
 # screenshot - save to clipboard
@@ -171,4 +171,7 @@ XF86AudioLowerVolume
 #
 
 XF86MonBrightness{Up,Down}  
-  brightnessctl s 1000{+,-}  
+  brightnessctl s 10%{+,-}  
+
+super + shift + {Up,Down}
+  brightnessctl --device='rgb:kbd_backlight' set 10%{+,-}
