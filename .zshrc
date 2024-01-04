@@ -18,6 +18,10 @@ compinit
 # my configs
 #
 
+# move by word
+bindkey "^[[1;5C" forward-word
+bindkey "^[[1;5D" backward-word
+
 # Load starship shell
 eval "$(starship init zsh)"
 # Load configs
