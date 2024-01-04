@@ -15,7 +15,7 @@ if [ -f "$usermodmap" ]; then xmodmap "$usermodmap"; fi
 export GTK_IM_MODULE=fcitx \
 QT_IM_MODULE=fcitx \
 XMODIFIERS=@im=fcitx \
-SDL_IM_MODULE=fcitx \
+SDL_IM_MODULE=fcitx
 fcitx &
 
 # keymaps WM
@@ -28,5 +28,8 @@ feh --bg-fill /home/vnc1106/.local/share/images/desktop.jpg
 polybar &
 # fix cursor `x`
 xsetroot -cursor_name left_ptr &
+# screen saver
+/home/vnc1106/.scripts/i3lock/screen_saver &
+
 # run WM
 exec bspwm
