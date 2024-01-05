@@ -20,14 +20,19 @@ fcitx &
 
 # keymaps WM
 sxhkd &
+
 # fix shadows in windows
 picom --config /home/vnc1106/.config/picom/picom.conf &
+
 # set background
 feh --bg-fill /home/vnc1106/.local/share/images/desktop.jpg 
+
 # status bar
-polybar &
+/home/vnc1106/.config/polybar/launch.sh
+
 # fix cursor `x`
 xsetroot -cursor_name left_ptr &
+
 # screen saver
 /home/vnc1106/.scripts/i3lock/screen_saver &
 
